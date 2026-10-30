@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aran - Electrical & Automation Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Prompt', sans-serif; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- แถบเมนูด้านบน -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Aran.</a>
+            <div class="space-x-6 hidden md:block">
+                <a href="#about" class="hover:text-blue-600 transition font-medium">เกี่ยวกับ</a>
+                <a href="#portfolio" class="hover:text-blue-600 transition font-medium">ผลงาน</a>
+                <a href="#experiments" class="hover:text-blue-600 transition font-medium">งานทดลอง</a>
+                <a href="#contact" class="hover:text-blue-600 transition font-medium">ติดต่อ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ส่วนแนะนำตัว (Hero Section) พร้อมภาพพื้นหลัง -->
+    <section id="about" class="relative py-24 px-6 bg-gray-50 overflow-hidden">
+        
+        <!-- ส่วนรูปภาพพื้นหลัง -->
+        <div class="absolute inset-0 z-0">
+            <!-- แนะนำให้ใช้รูปแนวนอน เช่น รูปโรงงาน, แผงวงจร, หรือตู้คอนโทรล -->
+            <img src="images/bg-hero.jpg" alt="Background" class="w-full h-full object-cover opacity-10">
+        </div>
+        
+        <!-- เนื้อหา (ใช้ relative z-10 เพื่อให้ลอยอยู่เหนือภาพพื้นหลัง) -->
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">สวัสดีครับ ผม <span class="text-blue-600">Aran</span></h1>
+                <h2 class="text-2xl text-gray-600 mb-6 font-medium">Electrical & Automation Engineer</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0 font-medium">
+                    วิศวกรไฟฟ้าและระบบอัตโนมัติ เชี่ยวชาญการเขียนโปรแกรม PLC (Mitsubishi, Omron, Keyence), ออกแบบ HMI, และพัฒนาระบบ Industrial IoT เพื่อควบคุมและตรวจสอบข้อมูลในงานอุตสาหกรรม
+                </p>
+                <a href="#contact" class="px-8 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition shadow-lg hover:shadow-xl inline-block">
+                    ติดต่องาน
+                </a>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <!-- รูปโปรไฟล์ของคุณ -->
+                <img src="images/profile.jpg" alt="Aran Profile" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- ส่วนรวมผลงาน (Portfolio) -->
+    <section id="portfolio" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">ผลงานที่โดดเด่น (Portfolio)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- ผลงานชิ้นที่ 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100">
+                    <img src="images/cover1.jpg" alt="Smart Vision AI" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Smart Vision AI Conveyor</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">ระบบสายพานตรวจสอบคุณภาพด้วย Computer Vision พร้อม Web Dashboard สำหรับดูข้อมูลแบบเรียลไทม์</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Raspberry Pi 4</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Python</span>
+                        </div>
+                        <a href="project1.html" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center text-sm">
+                            ดูรายละเอียด <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ผลงานชิ้นที่ 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100">
+                    <img src="images/cover2.jpg" alt="ARAN POS" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">ARAN POS System</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Web-based Point-of-Sale สำหรับร้านอาหาร จัดการโต๊ะ พิมพ์ใบเสร็จ และรับชำระเงินผ่าน PromptPay QR</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Web App</span>
+                        </div>
+                        <a href="project2.html" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center text-sm">
+                            ดูรายละเอียด <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ผลงานชิ้นที่ 3 -->
+                <div class="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100">
+                    <img src="images/cover3.jpg" alt="Smart Weight Logger" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Smart Weight Logger IoT</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">ระบบบันทึกน้ำหนักอัจฉริยะ อัปโหลดข้อมูลขึ้น Google Sheets อัตโนมัติ แจ้งเตือนสถานะผ่าน LED และ Buzzer</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">ESP32</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">IoT</span>
+                        </div>
+                        <a href="project3.html" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center text-sm">
+                            ดูรายละเอียด <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- ส่วนผลงานทดลอง (Experiments / R&D) -->
+    <section id="experiments" class="py-20 px-6 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">สิ่งที่เราทดลอง & งานอดิเรก (R&D)</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">รวมมินิโปรเจกต์ การทดสอบเซ็นเซอร์ การเขียนโค้ดเพื่อแก้ปัญหาเฉพาะจุด และการเรียนรู้เทคโนโลยีใหม่ๆ ในสายงาน Automation และ IoT</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- งานทดลองชิ้นที่ 1 -->
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition group">
+    <div class="h-40 overflow-hidden">
+        <img src="images/exp1.jpg" alt="Modbus Test" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+    </div>
+    <div class="p-5 flex flex-col h-[calc(100%-10rem)]"> <!-- ปรับโครงสร้างเล็กน้อยให้ปุ่มอยู่ด้านล่างสุด -->
+        <h3 class="font-bold text-gray-800 mb-2 leading-tight">ทดสอบอ่านค่า Modbus RTU</h3>
+        <p class="text-gray-600 text-sm mb-4 line-clamp-2">ใช้ ESP32 ดึงข้อมูลอุณหภูมิและความชื้นจากเซ็นเซอร์ XY-MD02 ผ่าน RS485</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">Modbus</span>
+            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">ESP32</span>
+        </div>
+        <!-- เพิ่มปุ่มกดลิงก์ไปหน้า exp1.html ตรงนี้ -->
+        <div class="mt-auto pt-2 border-t border-gray-100">
+            <a href="exp1.html" class="text-green-600 font-medium hover:text-green-800 text-sm inline-flex items-center transition">
+                ดูผลการทดลอง <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+                <!-- งานทดลองชิ้นที่ 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition group">
+                    <div class="h-40 overflow-hidden">
+                        <img src="images/exp2.jpg" alt="AGV Prototype" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-2 leading-tight">ต้นแบบรถ AGV วิ่งตามเส้น</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">ทดลองสร้าง AGV นำทางด้วยเทปแม่เหล็ก ควบคุมด้วย PLC และปรับความเร็วด้วย PID</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">PLC</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">PID Control</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- งานทดลองชิ้นที่ 3 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition group">
+                    <div class="h-40 overflow-hidden">
+                        <img src="images/exp3.jpg" alt="ESP32-CAM" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-2 leading-tight">สตรีมภาพด้วย ESP32-CAM</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">ทดสอบบอร์ดกล้องจิ๋วส่งภาพผ่าน WiFi เข้าวงจร Local Network เพื่อดูผ่าน Web Browser</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">Camera</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- งานทดลองชิ้นที่ 4 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition group">
+                    <div class="h-40 overflow-hidden">
+                        <img src="images/exp4.jpg" alt="Energy Monitor" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-gray-800 mb-2 leading-tight">ทดสอบอ่านค่าไฟฟ้า PZEM</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">วัดแรงดัน กระแส และกำลังไฟฟ้าด้วยโมดูล PZEM-004T ส่งข้อมูลขึ้น ThingsBoard Cloud</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">PZEM-004T</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-xs rounded border border-green-100">ThingsBoard</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ส่วนท้าย (Footer / Contact) -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">สนใจร่วมงานกันไหม?</h2>
+            <p class="text-gray-400 mb-8 max-w-md mx-auto">ติดต่อสอบถาม แลกเปลี่ยนไอเดีย หรือพูดคุยเกี่ยวกับการพัฒนาระบบ Automation, ไฟฟ้าอุตสาหกรรม และ IoT ได้เลยครับ</p>
+            <div class="flex justify-center gap-8 mb-10">
+                <a href="#" class="text-gray-400 hover:text-white transition text-3xl"><i class="fab fa-github"></i></a>
+                <a href="mailto:your.email@gmail.com" class="text-gray-400 hover:text-white transition text-3xl"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition text-3xl"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2026 Aran. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
